@@ -7,10 +7,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Secondary" />
-        <module name="Primary" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Primary" target="17" />
+      <module name="Secondary" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
