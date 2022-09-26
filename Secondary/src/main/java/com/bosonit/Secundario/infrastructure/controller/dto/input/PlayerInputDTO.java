@@ -1,4 +1,4 @@
 package com.bosonit.Secundario.infrastructure.controller.dto.input;
 
-public class PersonInputDTO {
+public class PlayerInputDTO {
 }
