@@ -3,8 +3,10 @@ package com.bosonit.Secundario.infrastructure.controller;
 
 import com.bosonit.Secundario.application.partida.PartidaServiceImpl;
 import com.bosonit.Secundario.domain.Partida;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.http.MediaType;
 import org.springframework.web.reactive.function.server.ServerRequest;
 import org.springframework.web.reactive.function.server.ServerResponse;
@@ -16,10 +18,11 @@ import static org.springframework.web.reactive.function.BodyInserters.fromPublis
 import static org.springframework.web.reactive.function.server.ServerResponse.ok;
 
 @Slf4j
+@RequiredArgsConstructor
 public class PartidaHandler {
 
-    @Autowired
-    PartidaServiceImpl service;
+
+    final PartidaServiceImpl service;
 
     public Mono<ServerResponse> getAll(ServerRequest req) {
         var all = service.findAll();

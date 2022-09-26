@@ -2,6 +2,7 @@ package com.bosonit.Secundario.application.partida;
 
 import com.bosonit.Secundario.domain.Partida;
 import com.bosonit.Secundario.infrastructure.repository.PartidaRepository;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -9,11 +10,14 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 @Slf4j
-@Service
+@RequiredArgsConstructor
 public class PartidaServiceImpl implements PartidaService{
 
-    @Autowired
-    PartidaRepository partidaRepository;
+//    @Autowired
+//    PartidaRepository partidaRepository;
+
+    public final PartidaRepository partidaRepository;
+
     @Override
     public Mono<Partida> findById(int id) {
         return partidaRepository

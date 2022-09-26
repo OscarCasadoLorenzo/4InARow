@@ -4,17 +4,7 @@ CREATE TABLE IF NOT EXISTS PARTIDA (
   host_name VARCHAR(50) NOT NULL,
   guest_name VARCHAR(50) NOT NULL,
   guest_ip VARCHAR(50) NOT NULL,
+--  tablero[][] ARRAY,
   turno VARCHAR(50) NOT NULL,
-  existe_ganador BOOOLEAN
-
+  existe_ganador BOOLEAN
 );
-
-
-    int id;
-    String host_name;
-    String host_ip;
-    String guest_name;
-    String guest_ip;
-    String[][] tablero;
-    String turno;
-    Boolean existe_ganador;
