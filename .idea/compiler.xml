@@ -13,6 +13,8 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Primary" target="17" />
+      <module name="primary" target="17" />
+      <module name="secondary" target="17" />
       <module name="Secondary" target="17" />
     </bytecodeTargetLevel>
   </component>
@@ -22,6 +24,8 @@
       <module name="Principal" options="-parameters" />
       <module name="Secondary" options="-parameters" />
       <module name="Secundario" options="-parameters" />
+      <module name="primary" options="-parameters" />
+      <module name="secondary" options="-parameters" />
     </option>
   </component>
 </project>
